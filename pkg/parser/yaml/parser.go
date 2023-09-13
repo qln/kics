@@ -2,6 +2,8 @@ package json
 
 import (
 	"bytes"
+	"encoding/json"
+	"fmt"
 
 	"github.com/Checkmarx/kics/pkg/parser/utils"
 
@@ -65,6 +67,10 @@ func convertKeysToString(docs []model.Document) []model.Document {
 		}
 		documents = append(documents, doc)
 	}
+	fmt.Println("---parse yaml---")
+	out, _ := json.Marshal(&documents)
+	fmt.Println(string(out))
+	fmt.Println(">>>parse yaml<<<")
 	return documents
 }
 

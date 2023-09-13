@@ -1,0 +1,10 @@
+{
+  "id": "725e6cbc-6174-41b9-be30-8fd9a4d55982",
+  "queryName": "plain password",
+  "severity": "HIGH",
+  "category": "Observability",
+  "descriptionText": "Roles defined in Serverless files should not have policies granting full administrative privileges.",
+  "descriptionUrl": "",
+  "platform": "Shell",
+  "descriptionID": "0907f0e7"
+}

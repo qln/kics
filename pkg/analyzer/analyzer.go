@@ -61,9 +61,13 @@ var (
 	pulumiResourcesRegex                            = regexp.MustCompile(`resources\s*:`)
 	serverlessServiceRegex                          = regexp.MustCompile(`service\s*:`)
 	serverlessProviderRegex                         = regexp.MustCompile(`provider\s*:`)
+<<<<<<< Updated upstream
 	cicdOnRegex                                     = regexp.MustCompile(`\s*on:\s*`)
 	cicdJobsRegex                                   = regexp.MustCompile(`\s*jobs:\s*`)
 	cicdStepsRegex                                  = regexp.MustCompile(`\s*steps:\s*`)
+=======
+	shellRegex                                      = regexp.MustCompile(`(#!/bin/bash|#!/bin/sh)\s*`)
+>>>>>>> Stashed changes
 )
 
 var (
@@ -250,11 +254,17 @@ var types = map[string]regexSlice{
 			serverlessProviderRegex,
 		},
 	},
+<<<<<<< Updated upstream
 	"cicd": {
 		[]*regexp.Regexp{
 			cicdOnRegex,
 			cicdJobsRegex,
 			cicdStepsRegex,
+=======
+	"shell": {
+		[]*regexp.Regexp{
+			shellRegex,
+>>>>>>> Stashed changes
 		},
 	},
 }

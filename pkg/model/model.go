@@ -23,6 +23,7 @@ const (
 	KindBUILDAH   FileKind = "SH"
 	KindCFG       FileKind = "CFG"
 	KindINI       FileKind = "INI"
+	KindSHELL     FileKind = "SH"
 )
 
 // Constants to describe commands given from comments
